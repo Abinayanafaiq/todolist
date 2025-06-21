@@ -56,7 +56,7 @@ export default function MyTask() {
           Belum ada tugas yang di tambahkan
         </p>
       ) : (
-        <ul className="space-y-4">
+        <ul className="space-y-4 mx-2.5">
           {todos.map((todo) => (
             <li
               key={todo._id}
