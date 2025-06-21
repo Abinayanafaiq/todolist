@@ -12,7 +12,7 @@ export default function Navbar() {
     <nav className="bg-gray-100 shadow-md">
       <div className="max-w-6xl mx-auto px-4">
         <div className="flex justify-between items-center h-16">
-          <div className="text-xl font-bold">ToDoApp</div>
+          <div className="text-xl font-bold text-black">ToDoApp</div>
           <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
@@ -22,14 +22,14 @@ export default function Navbar() {
             </button>
           </div>
           {/* Menu Links -Dekstop */}
-          <div className="hidden md:flex gap-6 items-center">
-            <Link href={"/"} className="hover:underline">
+          <div className="hidden md:flex gap-6 items-center text-black">
+            <Link href={"/"} className="hover:underline text-black">
               Home
             </Link>
-            <Link href={"my-task"} className="hover:underline">
+            <Link href={"my-task"} className="hover:underline text-black">
               My Task
             </Link>
-            <Link href={"/add-task"} className="hover:underline">
+            <Link href={"/add-task"} className="hover:underline text-black">
               Add Task
             </Link>
           </div>
@@ -38,7 +38,7 @@ export default function Navbar() {
 
       {/* Menu Links - Mobile */}
       {isOpen && (
-        <div className="md:hidden px-4 pb-4 flex flex-col gap-3">
+        <div className="md:hidden px-4 pb-4 flex flex-col gap-3 text-black">
           <Link href={"/"} onClick={() => setIsOpen(false)}>
             Home
           </Link>
